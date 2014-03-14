@@ -72,8 +72,8 @@ module OpenFlashChart
     end
 
     def set_range(min,max,steps=1)
-      @min   = min
-      @max   = max
+      @min   = min.to_f
+      @max   = max.to_f
       @steps = steps
     end
 
